@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espada Jedi</title>
+    <link rel="stylesheet" href="cssespada.css">
+    <link rel="shortcut icon" href="523813.png" type="image/x-icon">
+</head>
+<body>
+    <div class="espada-jedi">
+        <div class="hilt">
+          <button id="btnLigar"></button>
+        </div>
+        <div class="blade"></div>
+    </div>
+      
+      <script>
+        var btnLigar = document.getElementById('btnLigar');
+        var hilt = document.querySelector('.hilt');
+        var blade = document.querySelector('.blade');
+
+        btnLigar.addEventListener('click', function() {
+        hilt.classList.toggle('button-pressed');
+        blade.classList.toggle('light-on');
+        });
+
+      </script>
+</body>
+</html>

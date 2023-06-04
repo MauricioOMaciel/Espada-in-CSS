@@ -1,0 +1,65 @@
+.espada-jedi {
+    position: relative;
+    width: 150px;
+    height: 500px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 100px auto;
+  }
+  
+  .hilt {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #btnLigar {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+  }
+  
+  
+  .blade {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 400px;
+    background-color: rgba(255, 0, 144, 0.5);
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: height 0.5s;
+  }
+  
+  .button-pressed .blade {
+    height: 0;
+  }
+  
+  .light-on {
+    background-color: white;
+    animation: lightGlow 1s infinite alternate;
+  }
+  
+  @keyframes lightGlow {
+    from {
+      box-shadow: 0 0 5px 5px white;
+    }
+    to {
+      box-shadow: 0 0 10px 10px white;
+    }
+  }
+  
